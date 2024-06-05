@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script>
       function sendJsonToParent(score) {
-        window.parent.postMessage({ type: 'jsonData', value: score }, '*');
+        window.parent.postMessage({ type: 'jsonData', score: score }, '*');
       }
     </script>
   </head>
