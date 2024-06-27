@@ -95,7 +95,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "300px";
-        canvas.style.height = "600px";
+        canvas.style.height = "300px";
       }
 
       loadingBar.style.display = "block";
@@ -104,7 +104,7 @@
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 80 * progress + "%";
+          progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
